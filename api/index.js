@@ -43,5 +43,5 @@ app.use('/api/post', postRouter);
 app.use('/api/category', catRouter);
 
 app.listen("5000", () => {
-   console.log("backend is runningg")
+   console.log("backend is runninggg")
 })
