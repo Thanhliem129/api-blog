@@ -15,7 +15,6 @@ app.use(express.json())
 
 app.use('/images', express.static(path.join(__dirname, "images")))
 
-
 mongoose.connect(process.env.MONGO_URL,{
    useUnifiedTopology : true,
    useNewUrlParser: true,
@@ -44,5 +43,5 @@ app.use('/api/post', postRouter);
 app.use('/api/category', catRouter);
 
 app.listen("5000", () => {
-   console.log("backend is running")
+   console.log("backend is runningg")
 })
