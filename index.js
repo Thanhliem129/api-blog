@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors');
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const router = require('./routes/auth');
@@ -10,8 +11,16 @@ const path = require('path');
 
 const app = express();
 
+const corsOptions = {
+   origin: 'http://www.liemloki129.byethost7.com',
+   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+ }
+
 dotenv.config();
 app.use(express.json())
+app.use(cors(corsOptions))
+
+
 
 app.use('/images', express.static(path.join(__dirname, "images")))
 
