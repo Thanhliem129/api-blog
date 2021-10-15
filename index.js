@@ -12,7 +12,7 @@ const path = require('path');
 const app = express();
 
 const corsOptions = {
-   origin: 'http://www.liemloki129.byethost7.com',
+   origin: 'http://www.liemloki129.byethost7.com/api',
    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
  }
 
