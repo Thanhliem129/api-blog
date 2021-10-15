@@ -58,7 +58,7 @@ router.delete('/:id', async (req, res) => {
          }  
       }
       else{
-         res.status(401).json('Bạn không có quyền xóa khi không phải người tạo bài viết này!')
+         res.status(401).json('Bạn không có quyền xóa khi không phải người tạo bài viết nàyy!')
       }
    } catch (error) {
       res.status(500).json(error)
